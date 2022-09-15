@@ -37,20 +37,25 @@ POST {{baseUrl}}/{{resourceName}}
 Content-Type: application/json
 
 {
-  "name": "Laptop"
+  "name": "Macbook",
+  "color": "mint green",
+  "price": 800,
+  "description": "The beautiful range of Apple Naturalé that has an exciting mix of natural ingredients. With the Goodness of 100% Natural Ingredients",
+  "thumbnailUrl": "https://loremflickr.com/400/400",
+  "categoryId": "07644abb-9c2d-4985-beb0-e935f0cee349"
 }
 
 ###
 
 # @name updateItem
-PATCH  {{baseUrl}}/{{resourceName}}/2
+PATCH  {{baseUrl}}/{{resourceName}}/c56c7e2d-19ca-4be7-b561-269812d0aa75
 Content-Type: application/json
 
 {
-  "name": "New Laptop"
+  "name": "Laptop"
 }
 
 ###
 
 # @name deleteItem
-DELETE   {{baseUrl}}/{{resourceName}}/2
+DELETE   {{baseUrl}}/{{resourceName}}/7XLsA3-

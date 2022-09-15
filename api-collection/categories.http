@@ -1,0 +1,41 @@
+@baseUrl = http://localhost:3000/api
+
+@resourceName = categories
+
+# @name getAllList
+GET {{baseUrl}}/{{resourceName}}
+
+###
+
+# @name getItemById
+GET {{baseUrl}}/{{resourceName}}/826f8b0e-a8f0-4415-991c-4579c29be70c
+
+###
+
+# @name filterItem
+GET {{baseUrl}}/{{resourceName}}/826f8b0e-a8f0-4415-991c-4579c29be70c
+
+###
+
+# @name addNewItem
+POST {{baseUrl}}/{{resourceName}}
+Content-Type: application/json
+
+{
+  "name": "Laptop"
+}
+
+###
+
+# @name updateItem
+PATCH  {{baseUrl}}/{{resourceName}}/2
+Content-Type: application/json
+
+{
+  "name": "New Laptop"
+}
+
+###
+
+# @name deleteItem
+DELETE   {{baseUrl}}/{{resourceName}}/2
